@@ -8,7 +8,7 @@ body,html{
 .top{
     width: 1903px;
     height: 176px;
-    background-color: bisque;
+    background-color: #ffffff;
    // color: brown;
   
     .top_T{
@@ -44,7 +44,7 @@ body,html{
                 ul{
                     li{
                         position: relative;
-                         margin: 0 7px;
+                         margin: 0 5px;
                         // padding: 0 5px;
                         float: left;
                         box-sizing: border-box;
@@ -54,7 +54,10 @@ body,html{
                             line-height: 36px;
                             span{
                                 display: inline-block;
-                                margin-left: 10px;
+                               
+                            }
+                            .lastspan{
+                                margin-left: 12px;
                             }
                             i{
                                 cursor: pointer;
@@ -64,7 +67,7 @@ body,html{
                                 background-position: -1px -690px;
                                 width: 10px;
                                 height: 5px;
-                                margin: 16px 10px 0;
+                                margin: 16px 2px 0 10px;
                                transform: rotate(180deg);
                             }
                           
@@ -86,14 +89,15 @@ body,html{
                        
                         .down{
                             position: absolute;
-                            width: 100px; 
+                            width: 90px; 
                             background: #ffffff;
                             left: 7px;
                             border: solid 1px #dddddd;
                             box-shadow: 5px 5px 5px #999999;
                              display: none;
+                             z-index: 99;
                             ol{
-                               width: 100px;
+                            
                               
                                 li{
                                      cursor: pointer;
@@ -103,7 +107,7 @@ body,html{
                                     color: #999999;
                                     line-height: 40px;
                                    text-align: center;
-                                   margin: 0 22px;
+                                   margin: 0 17px;
                                    border-bottom: 1px solid #dddddd;
 
                                 }
@@ -151,11 +155,12 @@ body,html{
         }
     }
     .top_B{
+        position: relative;
         .top_Bcenter{
             height: 140px;
             box-sizing: border-box;
             border: 1px solid #fff;
-            background: paleturquoise;
+            // background: paleturquoise;
             a{
                 float: left;
                .big-plogo{
@@ -245,11 +250,77 @@ body,html{
                 border-radius: 19px;
                 top:-38px;
                 cursor: pointer;
+                .car{
+                    display: inline-block;
+                    // line-height: 36px;
+                    background: url(../img/icon.png) no-repeat;
+                    background-position: -1px -148px;
+                    width: 16px;
+                    height: 17px;
+                    vertical-align: middle;
+                    margin-left: 14px;
+                    margin-top: -3px;
+                    margin-right: 3px;
+                }
+                span{
+                    color: #cc9756;
+                    line-height: 38px;
+                    text-align: center;
+                }
+                .Cdata{
+                    display: inline-block;
+                    width: 19px;
+                    height: 19px;
+                    text-align: center;
+                    line-height: 19px;
+                    color: #ffffff;
+                    font-weight: 700;
+                    border-radius: 50%;
+                    background: red;
+                   margin-left: 10px;
+
+                }
             }
             .enterCar:hover{
                 background: #f5f3ef;
             }
         }
+        .tab-nav{
+            line-height: 1;
+            font-weight: 700;
+            position: absolute;
+            height: 30px;
+            bottom: 21px;
+            width: 100%;
+            li{
+                 float: left;
+                margin:25px 22px;
+                a{ 
+                    display: inline-block;
+                    height: 21px;
+                    width: auto;
+                }
+                .index{
+                    border-bottom:3px solid #cc9756;
+                    color: #cc9756;
+                }
+                a:hover{
+                    border-bottom:3px solid #cc9756;
+                    color: #cc9756;
+                }
+            }
+            .line::after{
+                content: '';
+                display: inline-block;
+                height: 16px;
+                position: absolute;
+                border-left: 1px solid #cccccc;
+                vertical-align: middle;
+                margin-left: 20px;
+            }
+        }
+       
+
     }
 
 }
