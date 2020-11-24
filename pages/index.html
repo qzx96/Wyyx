@@ -7,10 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>网易严选首页</title>
     <link rel="stylesheet" href="../dist/css/reset.css">
+    <link rel="stylesheet" href="../dist/css/swiper.min.css">
     <link rel="stylesheet" href="../dist/css/index.css">
 </head>
 
 <body>
+    <!-- <div class="yx-wrap"> -->
     <div class="top">
         <div class="top_T">
             <div class="top_Tcenter container">
@@ -64,15 +66,16 @@
                 </div>
             </div>
         </div>
-        <div class="top_B container">
-            <div class="top_Bcenter">
-                <a href="#" class="big-logo" title="网易严选">
+        <!--  top_B_fixed -->
+        <div class="top_B">
+            <div class="top_Bcenter container">
+                <a href="#" class="big-logo " title="网易严选">
                     <i class="big-plogo min-plogo"></i>
                 </a>
 
                 <div class="search">
                     <i class="glass"></i>
-                    <input type="text" class="inputbox" placeholder="">
+                    <input type="text" class="inputbox" placeholder="黄龄按摩枪">
                     <div class="btn_search">搜索</div>
                 </div>
                 <div class="hotkey">
@@ -87,14 +90,20 @@
                     <span>购物车</span>
                     <i class="Cdata">0</i>
                 </div>
-
-            
-
-
-
                 <ul class="tab-nav">
-                    <li><a href="#" class="index">首页</a></li>
-                    <li><a href="#">居家生活</a></li>
+                    <li class="firstli"><a href="#" class="index">首页</a></li>
+                    <li><a href="#">居家生活</a>
+                    <dl>
+                        <dt>口碑好物</dt>
+                        <dd><img src="../img/hx.png" alt="" srcset=""><span> 口碑好物</span></dd>
+                        <dd><img src="../img/hx.png" alt="" srcset=""><span> 抑菌防螨</span></dd>
+                        <dd><img src="../img/hx.png" alt="" srcset=""><span> 秋冬焕新</span></dd>
+                        <dd><img src="../img/hx.png" alt="" srcset=""><span> 北欧原木</span></dd>
+                        <dd><img src="../img/hx.png" alt="" srcset=""><span> 收纳好物</span></dd>
+                        <dd><img src="../img/hx.png" alt="" srcset=""><span> 餐厨爆款清单</span></dd>
+                    </dl>
+                    
+                    </li>
                     <li><a href="#">服饰鞋包</a></li>
                     <li><a href="#">美食酒水</a></li>
                     <li><a href="#">个护清洁</a></li>
@@ -102,9 +111,14 @@
                     <li><a href="#">运动旅行</a></li>
                     <li><a href="#">数码家电</a></li>
                     <li class="line"><a href="#">严选全球</a></li>
-                    <li><a href="#">为你严选</a></li>
-                    <li><a href="#">众筹</a></li>
+                    <li class="none"><a href="#">为你严选</a></li>
+                    <li class="none"><a href="#">众筹</a></li>
                 </ul>
+                <i class="glass"></i>
+                <div class="fixed-user">
+                   
+                    <i class="user"></i>
+                </div>
 
             </div>
 
@@ -115,11 +129,223 @@
         <img src="../dist/img/banner.png" alt="" srcset="">
     </div>
 
+   
+    <div class="newproduct">
+        <div class="m-c container">
+            <div class="c-header">
+                <div class="h-left">
+                    <a href="#">
+                        <h3>新品首发</h3>
+                    </a>
+                    <span>为你寻找世间好物</span>
+                </div>
+                <div class="h-right">
+                    <a href="#">更多新品 &gt;</a>
+                </div>
+            </div>
+
+            <div class="swiper-container sw-con">
+                <div class="swiper-wrapper sw-wrap">
+                    <div class="swiper-slide sw-slide">
+                        <div class="sw-pic">
+                            <img src="../img/neprmin.png" alt="" srcset="">
+                            <div class="bd">
+                                <div class="tag">
+                                    <span>新品限时抢购</span>
+                                </div>
+                                <h4><span>奶香浓郁四层夹心俄罗斯冰
+                                    淇淋威化饼干
+                                   </span></h4>
+                                   <p class="price"><span> ￥</span><span>69</span></p>
+                            </div>
+                       
+                        </div>
+                        <div class="sw-pic">
+                            <img src="../img/neprmin.png" alt="" srcset="">
+                            <div class="bd">
+                                <div class="tag">
+                                    <span>新品限时抢购</span>
+                                </div>
+                                <h4><span>奶香浓郁四层夹心俄罗斯冰
+                                    淇淋威化饼干
+                                   </span></h4>
+                                   <p class="price"><span> ￥</span><span>69</span></p>
+                            </div>
+                       
+                        </div>
+                        <div class="sw-pic">
+                            <img src="../img/neprmin.png" alt="" srcset="">
+                            <div class="bd">
+                                <div class="tag">
+                                    <span>新品限时抢购</span>
+                                </div>
+                                <h4><span>奶香浓郁四层夹心俄罗斯冰
+                                    淇淋威化饼干
+                                   </span></h4>
+                                   <p class="price"><span> ￥</span><span>69</span></p>
+                            </div>
+                       
+                        </div>
+                        <div class="sw-pic">
+                            <img src="../img/neprmin.png" alt="" srcset="">
+                            <div class="bd">
+                                <div class="tag">
+                                    <span>新品限时抢购</span>
+                                </div>
+                                <h4><span>奶香浓郁四层夹心俄罗斯冰
+                                    淇淋威化饼干
+                                   </span></h4>
+                                   <p class="price"><span> ￥</span><span>69</span></p>
+                            </div>
+                       
+                        </div>
+                    </div>
+                    <div class="swiper-slide sw-slide">
+                        <div class="sw-pic">
+                            <img src="../img/new2.png" alt="" srcset="">
+                            <div class="bd">
+                                <div class="tag">
+                                    <span>新品限时抢购</span>
+                                </div>
+                                <h4><span>奶香浓郁四层夹心俄罗斯冰
+                                    淇淋威化饼干
+                                   </span></h4>
+                                   <p class="price"><span> ￥</span><span>69</span></p>
+                            </div>
+                       
+                        </div>
+                        <div class="sw-pic">
+                            <img src="../img/neprmin.png" alt="" srcset="">
+                            <div class="bd">
+                                <div class="tag">
+                                    <span>新品限时抢购</span>
+                                </div>
+                                <h4><span>奶香浓郁四层夹心俄罗斯冰
+                                    淇淋威化饼干
+                                   </span></h4>
+                                   <p class="price"><span> ￥</span><span>69</span></p>
+                            </div>
+                       
+                        </div>
+                        <div class="sw-pic">
+                            <img src="../img/neprmin.png" alt="" srcset="">
+                            <div class="bd">
+                                <div class="tag">
+                                    <span>新品限时抢购</span>
+                                </div>
+                                <h4><span>奶香浓郁四层夹心俄罗斯冰
+                                    淇淋威化饼干
+                                   </span></h4>
+                                   <p class="price"><span> ￥</span><span>69</span></p>
+                            </div>
+                       
+                        </div>
+                        <div class="sw-pic">
+                            <img src="../img/neprmin.png" alt="" srcset="">
+                            <div class="bd">
+                                <div class="tag">
+                                    <span>新品限时抢购</span>
+                                </div>
+                                <h4><span>奶香浓郁四层夹心俄罗斯冰
+                                    淇淋威化饼干
+                                   </span></h4>
+                                   <p class="price"><span> ￥</span><span>69</span></p>
+                            </div>
+                       
+                        </div>
+                    </div>
+                    <div class="swiper-slide sw-slide">
+                        <div class="sw-pic">
+                            <img src="../img/newo.png" alt="" srcset="">
+                            <div class="bd">
+                                <div class="tag">
+                                    <span>特价</span>
+                                </div>
+                                <h4><span>橘味甜水炸弹，临海涌泉蜜
+                                    桔5斤
+                                    
+                                   </span></h4>
+                                   <p class="price"><span> ￥</span><span>69</span></p>
+                            </div>
+                       
+                        </div>
+                        <div class="sw-pic">
+                            <img src="../img/neprmin.png" alt="" srcset="">
+                            <div class="bd">
+                                <div class="tag">
+                                    <span>新品限时抢购</span>
+                                </div>
+                                <h4><span>奶香浓郁四层夹心俄罗斯冰
+                                    淇淋威化饼干
+                                   </span></h4>
+                                   <p class="price"><span> ￥</span><span>69</span></p>
+                            </div>
+                       
+                        </div>
+                        <div class="sw-pic">
+                            <img src="../img/neprmin.png" alt="" srcset="">
+                            <div class="bd">
+                                <div class="tag">
+                                    <span>新品限时抢购</span>
+                                </div>
+                                <h4><span>奶香浓郁四层夹心俄罗斯冰
+                                    淇淋威化饼干
+                                   </span></h4>
+                                   <p class="price"><span> ￥</span><span>69</span></p>
+                            </div>
+                       
+                        </div>
+                        <div class="sw-pic">
+                            <img src="../img/neprmin.png" alt="" srcset="">
+                            <div class="bd">
+                                <div class="tag">
+                                    <span>新品限时抢购</span>
+                                </div>
+                                <h4><span>奶香浓郁四层夹心俄罗斯冰
+                                    淇淋威化饼干
+                                   </span></h4>
+                                   <p class="price"><span> ￥</span><span>69</span></p>
+                            </div>
+                       
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="swiper-button-prev btn-prev btn"></div><!--左箭头。如果放置在swiper-container外面，需要自定义样式。-->
+            <div class="swiper-button-next btn-next btn"></div><!--右箭头。如果放置在swiper-container外面，需要自定义样式。-->
+            
+        </div>
+
+        <!-- fixed  -->
+        <ul class="aside-list">
+            <li class="item firstItem">热销榜</li>
+            <li class="item"><img src="../img/aside1.png" class="sideicon" alt="" srcset=""><span>居家<br>生活榜</span></li>
+            <li class="item"><img src="../img/aside1.png" class="sideicon" alt="" srcset=""><span>居家<br>生活榜</span></li>
+            <li class="item"><img src="../img/aside1.png" class="sideicon" alt="" srcset=""><span>居家<br>生活榜</span></li>
+            <li class="item"><img src="../img/aside1.png" class="sideicon" alt="" srcset=""><span>居家<br>生活榜</span></li>
+            <li class="item"><img src="../img/aside1.png" class="sideicon" alt="" srcset=""><span>居家<br>生活榜</span></li>
+            <li class="item"><img src="../img/aside1.png" class="sideicon" alt="" srcset=""><span>居家<br>生活榜</span></li>
+            <li class="item"><img src="../img/aside1.png" class="sideicon" alt="" srcset=""><span>居家<br>生活榜</span></li>
+            <li class="item"><img src="../img/aside1.png" class="sideicon" alt="" srcset=""><span>居家<br>生活榜</span></li>
+            <li class="item"><img src="../img/aside1.png" class="sideicon" alt="" srcset=""><span>居家<br>生活榜</span></li>
+        </ul>
+    
+    
+    </div>
+   
+    <div class="intimebuy">
+        <div class="i_inner container">
+            <div class="i-left"><h3 class="name">限时购</h3></div>
+            <div class="i-right"><a href="#">更多抢购</a>&gt;</div>
+        </div>  
+    </div>
+
+    <!-- </div> -->
 
 
 
-
-
+    <script src="../dist/js/swiper.min.js"></script>
     <script src="../dist/js/jquery-2.1.4.min.js"></script>
     <script src="../dist/js/index.js"></script>
 </body>
