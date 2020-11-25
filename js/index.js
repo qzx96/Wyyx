@@ -26,9 +26,6 @@ $('.tab-nav li').on({
     $(this).find('dl').stop().hide()
   }
 })
-
-
-
 //新品首发部分的轮播图
 var mySwiper = new Swiper('.swiper-container',{
   //pagination : '.swiper-pagination',
@@ -52,14 +49,39 @@ $('.sw-pic').on({
     $(this).css({'background-color':'#fff','box-shadow':'none'})
   }
 })
+
+//滚动条
 $(window).scroll(function(){
-//大于177px
+          //大于177px
 
         $(window).scrollTop()>140?$(".top_B").addClass('top_B_fixed'):$(".top_B").removeClass('top_B_fixed');
         $(window).scrollTop()>400?$(".aside-list").addClass('fixed'):$(".aside-list").removeClass('fixed');
         $(window).scrollTop()>400?$(".aside-list").css('position','fixed'):$(".aside-list").css('position','absolute');
-
-//滚动距离
+        $(window).scrollTop()>0?$('.mask').css('position','fixed'):$('.mask').css('position','absolute')
+          //滚动距离
 
         console.log($(window).scrollTop())
-   });
+});
+
+//遮罩层和控制页面出现
+$('.login').click(function(){
+  $('.mask').css('display','block')
+  $('.wrap').css('display','block')
+})
+$('.del').click(function(){
+  $('.mask').css('display','none')
+  $('.wrap').css('display','none')
+})
+
+//点击商品跳转到商品详情页
+
+$('.sw-pic img').click(function(){
+  // window.location.href="../pages/detail.html";
+  window.open('../dist/detail.html')
+})
+
+//点击一类商品跳转到商品列表
+$('.tab-nav').click(function(){
+  window.open('../dist/goodslist.html')
+})
+
