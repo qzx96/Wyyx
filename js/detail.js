@@ -46,4 +46,13 @@ $('.goodsbox').on({
 })
 
 
-  
+  //点击列表图片对应图片切换
+$('.ul-list li').click(function (){
+  $("li a").each(function(){
+    $(this).css('border-color','#e8e8e8')
+  });
+
+  $(this).find('a').css('border-color','#B4A078')
+  $('.goodsbox img').attr('src',$(this).find('img').attr('src'))
+  $('.hidbox img').attr('src',$(this).find('img').attr('src'))
+})
