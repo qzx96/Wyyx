@@ -47,7 +47,7 @@ $('.goodsbox').on({
 
 
   //点击列表图片对应图片切换
-$('.ul-list li').click(function (){
+$('.ul-list li').on('click',function (){
   $("li a").each(function(){
     $(this).css('border-color','#e8e8e8')
   });

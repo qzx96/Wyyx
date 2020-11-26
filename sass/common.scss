@@ -341,17 +341,18 @@ html {
 
                 }
             }
-
+           
             .enterCar {
                 position: relative;
                 float: right;
                 width: 134px;
                 height: 38px;
-                border: 1px solid #cc9756;
+                 border: 1px solid #cc9756;
                 box-sizing: border-box;
                 border-radius: 19px;
                 top: -38px;
                 cursor: pointer;
+               
 
                 .car {
                     display: inline-block;
@@ -364,6 +365,8 @@ html {
                     margin-left: 14px;
                     margin-top: -3px;
                     margin-right: 3px;
+                    cursor: pointer;
+                   
                 }
 
                 span {
@@ -572,7 +575,9 @@ html {
                     cursor: pointer;
                 }
            
-
+                .enterCar:hover{
+                    background-color: #fff;
+                }
             .enterCar {
                 width: 34px;
                 height: 32px;
@@ -582,6 +587,8 @@ html {
                 position: relative;
                 left: -132px;
                 top: 11px;
+                cursor: pointer;
+                z-index: 99999;
                
                 span {
                     display: none;

@@ -39,11 +39,12 @@ $('.li_hover').on({
     }
   })
 //遮罩层和控制页面出现
-$('.login').click(function(){
+$('.login').on('click',function(){
     $('.mask').css('display','block')
     $('.wrap').css('display','block')
   })
-  $('.del').click(function(){
+
+  $('.del').on('click',function(){
     $('.mask').css('display','none')
     $('.wrap').css('display','none')
   })

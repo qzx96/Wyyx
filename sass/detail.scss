@@ -2,6 +2,17 @@
 // *{
 //     box-sizing: border-box;
 // }
+@mixin com {
+    .wor{
+    display: inline-block;
+    line-height: 28px;
+    width: 55px;
+    height: 28px;
+    font-size: 13px;
+    color: #333;
+    margin-left:10px;
+    }
+}
 .dti-wrap{
     height: 656px;
 
@@ -68,6 +79,7 @@
                 border: 1px solid #e8e8e8;
                 overflow: hidden;
                 display: none;
+                z-index: 999;
                 img{
                     position: absolute;
                 }
@@ -112,6 +124,85 @@
             width: 620px;
             height: 656px;
             float: right;
+            position: relative;
+           
+            .des{
+                width: 620px;
+                height: 57px;
+                margin: 0 0 20px;
+                p{
+                    color: #333333;
+                    font-size: 20px;
+                    font-weight: bold;
+
+                }
+                .txt2{
+                    color: #999;
+                    line-height:32px;
+                }
+                .R_eva{
+                    display: inline-block;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    line-height: 1.2;
+                    text-align: right;
+                    z-index: 1;
+                    font-weight: 400;
+                    font-weight: 400;
+                    strong{
+                        font-size: 20px;
+                        color: #E36844;
+                    }
+                    a{
+                        font-size: 13px;
+                    }
+                    a:hover{
+                        color:rgb(180,160,120);
+                    }
+                }
+            }
+            .desc{
+                box-sizing: border-box;
+                width: 620px;
+                height: 296px;
+                padding-bottom: 10px;
+                background-color: #F5F3EF;
+                border-bottom: 1px dashed #DEDEDE;
+                border-top: 1px dashed #DEDEDE;
+                hr{
+                    margin: 10px 20px 10px 10px;
+                    overflow: hidden;
+                    border: none;
+                    height: 1px;
+                    border-bottom: 1px dashed #d2d2d2;
+                }
+                  @include com;
+                .price{
+                    width: 620px;
+                    height: 50px;
+                    span{
+                        line-height: 50px;
+                    }
+                    .wor{
+                        line-height: 30px;
+                        height: 30px;
+                        margin: 16px 0 0 10px;
+                    }
+                     
+                   
+                    .pr_v{
+                        color: red;
+                        font-weight: bold;
+                        strong{
+                            font-size: 24px;
+                            font-weight: bolder;
+                            
+                        }
+                    }
+                }
+            }
+
         }
 
     }

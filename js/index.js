@@ -64,24 +64,26 @@ $(window).scroll(function(){
 });
 
 //遮罩层和控制页面出现
-$('.login').click(function(){
+$('.login').on('click',function(){
   $('.mask').css('display','block')
   $('.wrap').css('display','block')
 })
-$('.del').click(function(){
+$('.del').on('click',function(){
   $('.mask').css('display','none')
   $('.wrap').css('display','none')
 })
 
 //点击商品跳转到商品详情页
 
-$('.sw-pic img').click(function(){
+$('.sw-pic img').on('click',function(){
   // window.location.href="../pages/detail.html";
   window.open('../dist/detail.html')
 })
 
 //点击一类商品跳转到商品列表
-$('.tab-nav').click(function(){
+$('.tab-nav').on('click',function(){
   window.open('../dist/goodslist.html')
 })
+
+//数据请求
 

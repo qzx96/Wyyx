@@ -1,0 +1,460 @@
+@mixin car {
+    .d {
+        box-sizing: border-box;
+        display: inline-block;
+    }
+
+    .d-txt {
+        box-sizing: border-box;
+        width: 1090px;
+        // height: 47px;
+        margin-bottom: 20px;
+        padding: 12px 0;
+        border: 1px solid #ddd;
+        background-color: #f5f5f5;
+        color: #333;
+
+        .d-left {
+            width: 140px;
+
+            .check {
+                margin-left: 20px;
+
+                input {
+                    margin-top: -2px;
+                }
+
+                span {
+                    margin-left: 14px;
+                }
+            }
+        }
+
+        .d1 {
+            width: 300px;
+        }
+
+        .d2 {
+            width: 180px;
+        }
+
+        .d3 {
+            width: 170px;
+
+        }
+
+        .d4 {
+            width: 130px;
+            padding-right: 30px;
+        }
+
+        .d5 {
+            width: 128px;
+            padding-left: 30px;
+        }
+
+    }
+}
+
+.car {
+
+
+
+    .hed {
+        box-sizing: border-box;
+        width: 1090px;
+        height: 40px;
+        margin-top: 10px;
+        border: 1px solid #eaeaea;
+        line-height: 38px;
+
+        .c-left {
+            float: left;
+            width: 176px;
+            height: 38px;
+
+            .ic {
+                display: inline-block;
+                background: url('../img/yxcar.png') no-repeat;
+                background-position: 0px -105px;
+                width: 28px;
+                height: 20px;
+                margin: 9px 17px 0 12px;
+            }
+
+            span {
+                font-size: 14px;
+                color: #333;
+
+            }
+
+
+        }
+
+        .c-right {
+            float: right;
+            padding: 0 26px;
+            height: 38px;
+            line-height: 38px;
+            text-align: center;
+            color: #fff;
+            background-color: #E36844;
+            cursor: pointer;
+
+            .icr {
+                background: url('../img/yanxuan.png') no-repeat;
+                display: inline-block;
+                width: 12px;
+                height: 7px;
+                background-position: 0px -856px;
+            }
+        }
+
+    }
+
+    .car-empty {
+        position: relative;
+        border: 1px solid #ddd;
+        height: 696px;
+        padding-bottom: 40px;
+        margin-top: 10px;
+
+        .empty-status {
+            width: 1088px;
+            height: 264px;
+            text-align: center;
+            margin: 150px auto 0;
+            margin-top: 200px;
+
+            .emp-car {
+                background: url('../img/empty-icon.png') no-repeat;
+                background-position: 0 -570px;
+                width: 180px;
+                height: 180px;
+                display: inline-block;
+                overflow: hidden;
+                vertical-align: top;
+                font-size: 12px;
+                word-spacing: normal;
+                letter-spacing: normal;
+            }
+
+            .E-txt {
+                font-size: 16px;
+                color: #999;
+            }
+
+            .btnline {
+
+                width: 1088px;
+                height: 40px;
+                margin: 20px 0 0;
+                margin: 20px 0 0;
+                line-height: 40px;
+
+                .c-login {
+                    display: inline-block;
+                    width: 100px;
+                    height: 40px;
+                    color: #fff;
+                    font-size: 16px;
+                    background-color: #B4A078;
+                    margin: 0 18px 0 0;
+                    cursor: pointer;
+
+                }
+
+                .c-goon {
+                    display: inline-block;
+                    width: 100px;
+                    height: 40px;
+                    color: #B4A078;
+                    font-size: 16px;
+                    background-color: #f5f3ef;
+
+
+                }
+            }
+        }
+    }
+
+    .car-body {
+        margin-top: 10px;
+
+        .data {
+            @include car;
+        }
+
+        .sp_wrap {
+
+            .car-group {
+                border: 1px solid #ddd;
+                margin-bottom: 10px;
+                // min-height: 142px;
+                @include car;
+
+                .d-car {
+                    width: 1088px;
+                    background: #fff;
+                    border: none;
+                    height: 140px;
+                    padding: 20px 0;
+                    box-sizing: border-box;
+
+                    .d-left {
+                        .check {
+                            a {
+                                img {
+                                    width: 98px;
+                                    height: 98px;
+                                }
+                            }
+                        }
+                    }
+
+                    .d1 {
+                        .xl {
+                            color: #999;
+                            cursor: pointer;
+                            line-height: 28px;
+
+                            i {
+                                display: inline-block;
+                                background: url('../img/yanxuan.png') no-repeat;
+                                background-position: 0 -740px;
+                                height: 4px;
+                                width: 10px;
+                                margin-left: 8px;
+                            }
+                        }
+                    }
+
+                    .d2 {
+                        .pric {
+                            font-size: 14px;
+                            line-height: 24px;
+
+                            .red {
+                                color: red;
+                            }
+                        }
+                    }
+
+                    .d3 {
+                        width: 170px;
+                        height: 40px;
+                        padding: 10px 0 0;
+                        box-sizing: border-box;
+
+                        .num {
+                            box-sizing: border-box;
+                            width: 117px;
+                            height: 28px;
+                            border: 1px solid #ddd;
+
+                            span {
+                                box-sizing: border-box;
+                                display: inline-block;
+                                width: 24px;
+                                height: 26px;
+                                cursor: pointer;
+                                text-align: center;
+                                line-height: 24px;
+                            }
+
+                            .less {
+                                border-right: 1px solid #ddd;
+                            }
+
+                            .add {
+                                border-left: 1px solid #ddd;
+                            }
+
+                            input {
+                                box-sizing: border-box;
+                                width: 58px;
+                                height: 24px;
+                                // margin-top: -6px;
+                                border: none;
+                            }
+
+                        }
+                    }
+
+                    .d4 {
+
+                        color: #d4282d;
+
+
+                    }
+
+                    .d5 {
+                        color: #666;
+                        line-height: 24px;
+
+                        a:hover {
+                            color: #B4A078;
+                        }
+                    }
+
+                }
+            }
+
+            .g1 {
+                background-color: #fffbf0;
+                border: 1px solid #ddd;
+                margin-bottom: 10px;
+                box-sizing: border-box;
+                width: 1090px;
+                height: 45px;
+                line-height: 45px;
+
+                .pn {
+                    padding: 0 30px 0 60px;
+                    .abuy{
+                        display: inline-block;
+                        height: 20px;
+                        line-height: 20px;
+                        color: #fff!important;
+                        padding: 0 5px;
+                        font-size: 12px;
+                        background-color: #e36844;
+                    }
+                    .sm{
+                        height: 43px;
+                       
+                        line-height: 42px;
+                        color: #666;
+                        margin-right: 20px;
+                    }
+                    .goto{
+                        width: 66px;
+                        height: 24px;
+                        line-height: 24px;
+                        margin-right: 20px;
+                        border:1px solid #d4282d;
+                        color: #d4282d;
+                        background: #fff;
+                        text-align: center;
+                        display: inline-block;
+                    }
+                    .cont{
+                        font-size: 14px;
+                        color: #6699cc;
+                    }
+                }
+            }
+
+            .totl {
+               
+                @include car;
+                
+
+                .d-totl {
+                    font-size: 14px;
+                    position: relative;
+                    background-color: #f5f5f5;
+                    border: 1px solid #ddd;
+                    height: 70px;
+                    line-height: 70px;
+                    width: 1088px;
+                    padding: 0;
+                    margin: 0;
+                    
+                    .d-left{
+                        width: 380px;
+                        a {
+                            display: inline-block;
+                            margin-left: 30px;
+                        }
+                        a:hover{
+                            color: #B4A078;
+                        }
+                    }
+                  .d2{
+                    float:right;
+                      width: 245px;
+                      height: 94px;
+                    //   float: right;
+                      padding: 0 30px;
+                      height: 94px;
+                    //   margin-left: 144px;
+                      .jg{
+                          line-height: 20px;
+                          margin-top: 12px;
+                          .span1{
+                              font-size: 14px;
+                              color: #333;
+                              margin: 0 14px 0 0;
+                          }
+                          .span2,i{
+                              font-size: 22px;
+                              color: #BE4141;
+                              font-weight: bold;
+                          }
+
+                      }
+                      .acco{
+                        line-height: 14px;
+                          text-align: right;
+                          a{
+                              color: #D3282D;
+                              font-size: 14px;
+                              line-height: 28px;
+                          }
+                      }
+                    
+                  }
+
+                    .d3 {
+                        width: 230px;
+                        float: right;
+                        margin: 10px 0;
+                        padding: 0 30px;
+                        border-right: 1px solid #ddd;
+                        line-height: 14px;
+                        height: 50px;
+                        color: #999;
+                       .line1{
+                            padding: 6px 0 0 ;
+                        }
+                        .line2{
+                            padding: 14px 0 0;
+                        }
+                        .sp2{
+                            float: right;
+                        }
+                       
+                    }
+
+                    .d5{
+                        width: 140px;
+                        height: 70px;
+                        float:right;
+                        padding: 0;
+                        .pay{
+                            .pay-btn{
+                                width: 140px;
+                                height: 70px;
+                                background: #B4A078;
+                                font-size: 18px;
+                                color: #fff;
+                                margin: -1px -1px 0 0;
+                                border: none;
+                                outline: none;
+                                cursor: pointer;
+                            }
+                            .pay-btn:hover{
+                                background: rgba(180,160,120,0.7);
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+    }
+
+
+}

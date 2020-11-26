@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物车-网易严选</title>
+</head>
+<link rel="stylesheet" href="../dist/css/reset.css">
+<link rel="stylesheet" href="../dist/css/swiper.min.css">
+<link rel="stylesheet" href="../dist/css/common.css">
+<link rel="stylesheet" href="../dist/css/car.css">
+
+<body>
+    <!-- 用户登录界面 -->
+    <div class="wrap">
+        <p><input type="text" class="user" placeholder="用户名"></p>
+        <p><input type="text" class="pass" placeholder="密码"></p>
+        <p><input type="checkbox" class="check">记住密码</p>
+        <p><input type="button" class="login" value="登录"></p>
+        <span class="del">X</span>
+    </div>
+    <!-- 遮罩层 -->
+    <div class="mask"></div>
+    <!-- <div class="yx-wrap"> -->
+    <div class="top">
+        <div class="top_T">
+            <div class="top_Tcenter container">
+                <div class="top_action">
+                    <span class="trum"></span>
+
+
+                    <a href="#"> 关于防止近期不法分子冒充客服实施诈骗的公告 </a>
+                </div>
+                <div class="top_nav">
+                    <ul>
+                        <li><a href="#" class="login">登录/注册</a></li>
+                        <li class="line "><a href="#"><span>我的订单</span></a></li>
+                        <li class="line "><a href="#"><span>会员</span></a></li>
+                        <li class="line "><a href="#"><span>甄选家</span></a></li>
+                        <li class="line li_hover"><a href="#"><span>企业采购</span><i></i></a>
+                            <div class="down">
+                                <ol>
+                                    <li>在线客服</li>
+                                    <li>帮助中心</li>
+                                    <li>商务合作</li>
+                                    <li class="last-li">开放平台</li>
+
+                                </ol>
+                            </div>
+                        </li>
+
+
+
+                        <li class="line li_hover"><a href="#"> <span>客户服务</span> <i></i></a>
+                            <div class="down">
+                                <ol>
+                                    <li>在线客服</li>
+                                    <li>帮助中心</li>
+                                    <li>商务合作</li>
+                                    <li class="last-li">开放平台</li>
+                                </ol>
+                            </div>
+                        </li>
+                        <li class="line li_hover"><a href="#"><i class="app"></i> <span class="lastspan"> APP</span></a>
+                            <div class="down erm">
+                                <p>下载领大额新人红包
+                                </p>
+                            </div>
+
+
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <!--  top_B_fixed -->
+        <div class="top_B">
+            <div class="top_Bcenter container">
+                <a href="#" class="big-logo " title="网易严选">
+                    <i class="big-plogo min-plogo"></i>
+                </a>
+
+                <div class="search">
+                    <i class="glass"></i>
+                    <input type="text" class="inputbox" placeholder="黄龄按摩枪">
+                    <div class="btn_search">搜索</div>
+                </div>
+                <div class="hotkey">
+                    <a href="#"><span>黄龄按摩枪</span>|</a>
+                    <a href="#"><span class="spe">花6得48</span>|</a>
+                    <a href="#"><span class="spe">暖冬爆款</span>|</a>
+                    <a href="#"><span>宁静护颈贴</span>|</a>
+                    <a href="#"><span>口罩</span></a>
+                </div>
+                <div class="enterCar">
+                    <i class="car"></i>
+                    <span>购物车</span>
+                    <i class="Cdata">0</i>
+                </div>
+                <ul class="tab-nav">
+                    <li class="firstli"><a href="#" class="index">首页</a></li>
+                    <li><a href="#">居家生活</a>
+                        <dl>
+                            <dt>口碑好物</dt>
+                            <dd><img src="../img/hx.png" alt="" srcset=""><span> 口碑好物</span></dd>
+                            <dd><img src="../img/hx.png" alt="" srcset=""><span> 抑菌防螨</span></dd>
+                            <dd><img src="../img/hx.png" alt="" srcset=""><span> 秋冬焕新</span></dd>
+                            <dd><img src="../img/hx.png" alt="" srcset=""><span> 北欧原木</span></dd>
+                            <dd><img src="../img/hx.png" alt="" srcset=""><span> 收纳好物</span></dd>
+                            <dd><img src="../img/hx.png" alt="" srcset=""><span> 餐厨爆款清单</span></dd>
+                        </dl>
+
+                    </li>
+                    <li><a href="#">服饰鞋包</a></li>
+                    <li><a href="#">美食酒水</a></li>
+                    <li><a href="#">个护清洁</a></li>
+                    <li><a href="#">母婴亲子</a></li>
+                    <li><a href="#">运动旅行</a></li>
+                    <li><a href="#">数码家电</a></li>
+                    <li class="line"><a href="#">严选全球</a></li>
+                    <li class="none"><a href="#">为你严选</a></li>
+                    <li class="none"><a href="#">众筹</a></li>
+                </ul>
+                <i class="glass"></i>
+                <!-- <div class="fixed-user">
+                    </div> -->
+                <a href="#" title="注册/登录" class="login"> <i class="user"></i></a>
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="car container">
+    <div class="hed">
+        <div class="c-left">
+            <i class="ic"></i>
+            <span>购物车可领优惠券</span>
+        </div>
+        <div class="c-right">
+            <span>领券</span>
+            <i class="icr"></i>
+        </div>
+
+    </div>
+
+    <div class="car-body">
+        <!-- <div class="data">
+            <div class="d d-txt">
+                <div class="d d-left">
+                    <div class="check">
+                        <input type="checkbox" name="" id="">
+                        <span>全选</span>
+                    </div>
+                </div>  
+                <div class="d left d1">商品信息</div> 
+                <div class="d left d2">单价</div> 
+                <div class="d d3">数量</div> 
+                <div class="d d4">小计</div> 
+                <div class="d d5">操作</div>
+
+            </div>
+        </div>
+        <div class="sp_wrap">
+            <div class="car-group g1">
+                <div class="pn">
+                    <span class="abuy">全场换购</span>
+                    <span class="sm">已满130元换购，再购101元享满300低至3折换购 </span>
+                    <a class="goto">去换购</a>
+                    <a href="#" class="cont">继续凑单&gt;&gt;</a>
+                </div>
+            </div>
+            <div class="car-group">
+                <div class="d d-txt d-car">
+                    <div class="d d-left">
+                        <div class="check">
+                            <input type="checkbox" name="" id="">
+                            <a><img src="../img/bz.png" alt="" srcset=""></a>
+                        </div>
+                    </div>  
+                    <div class="d left d1">
+                        <p class="ms">宝宝绒针织柔肤暖眠拼色四件套</p>
+                        <p class="xl">黄灰1.2m床三件套:适用1.5mx2m被芯<i></i></p> 
+                        </div> 
+                    <div class="d left d2">
+                        <div class="pric">
+                            <p >￥199.00</p>
+                             <p class="red"> 预计12月15日发货</p> 
+                                
+                        </div>
+                    </div> 
+                    <div class="d d3">
+                        <div class="num">
+                            
+                            <span class="less">-</span>
+                            <input type="text">
+                            <span class="add">+</span>
+                        
+                        </div>
+                    </div> 
+                    <div class="d d4">
+                        <p class="jg"><span>￥</span><i>199.00</i></p>
+                    </div> 
+                    <div class="d d5">
+                        <div class="move">
+                            <a href="javascript:;">移入收藏夹</a>
+                        </div>
+                        <a href="javascript:;">删除</a>
+                    </div>
+    
+                </div>
+            </div>
+
+            <div class="totl"> 
+                <div class="d d-txt d-totl">
+                    <div class="d d-left">
+                        <div class="check">
+                            <input type="checkbox" name="" id="">
+                            <span>已选(<span>0 </span>)</span>
+                            <a href="#">批量删除</a>
+                            <a href="#">清除失效商品</a>
+                            
+                        </div>
+                    </div>  
+                    
+
+
+                    
+                    <div class="d d5">
+                       
+                         <div class="pay"><button class="pay-btn">   下单</button></div>
+                    </div>
+                    <div class="d d2">
+                        <p class="jg"><span class="span1"> 应付总额：</span><span class="span2">￥</span> <i>199.00</i></p>
+                        <div class="acco"><a href="javascript:;"> 符合包邮要求</a></div>
+                    </div> 
+                    <div class="d d3">
+                       <p class="line1"><span class="sp1">商品合计:</span>
+                       <span class="sp2">￥ <i> 468.00</i></span></p>
+                      <p class="line2"><span class="sp1">已优惠:</span>
+                       <span class="sp2">￥ <i> 400.00</i></span></p>
+                    </div> 
+                    
+                   
+    
+                </div>
+            </div>
+        </div> -->
+
+    </div>
+
+
+    <div class="car-empty">
+        <div class="empty-status">
+            <div class="emp-car"></div>
+            <div class="E-txt">购物车还是空滴</div>
+            <p class="btnline">
+                <span class="c-login">登录</span>
+                <a href="_/" class="c-goon">继续逛</a>
+            </p>
+
+        </div>
+    </div>
+
+
+    </div>
+    <script src="../dist/js/swiper.min.js"></script>
+    <script src="../dist/js/jquery-2.1.4.min.js"></script>
+    <script src="../dist/js/common.js"></script>
+    <script src="../dist/js/car.js"></script>
+</body>
+
+</html>
