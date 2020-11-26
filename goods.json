@@ -1,7 +1,7 @@
 [
-    { "title": "2020新果上市，南非碧根果仁 150g", "imgurl1": "img/new1.png", "price": "￥39.9", "code": "abc1" },
-    { "title": "心心相印手帕纸，薰衣草味 你值得拥有", "imgurl1": "img/new2.jpg", "price": "￥9.9", "code": "abc2" },
-    { "title": "奶香浓郁四层夹心俄罗斯冰淇淋威化饼干", "imgurl1": "img/new5.jpg", "price": "￥69", "code": "abc3" },
-    { "title": "2020新果上市，临安山核桃仁 150g", "imgurl1": "img/nepr1.png", "price": "￥56.8", "code": "abc4" }
+    { "title": "2020新果上市，南非碧根果仁 150g", "imgurl1": "img/new1.png","imgurl2": "img/new2.png",  "price": "￥39.9", "code": "abc1" },
+    { "title": "心心相印手帕纸，薰衣草味 你值得拥有", "imgurl1": "img/new1.jpg","imgurl2": "img/new2.jpg",  "price": "￥9.9", "code": "abc2" },
+    { "title": "奶香浓郁四层夹心俄罗斯冰淇淋威化饼干", "imgurl1": "img/new5.jpg","imgurl2": "img/gtr1.png",  "price": "￥69", "code": "abc3" },
+    { "title": "2020新果上市，临安山核桃仁 150g", "imgurl1": "img/nepr1.png","imgurl2": "img/goodslist.png",  "price": "￥56.8", "code": "abc4" }
 
 ]

@@ -40,6 +40,7 @@ $('.li_hover').on({
   })
 //遮罩层和控制页面出现
 $('.login').on('click',function(){
+
     $('.mask').css('display','block')
     $('.wrap').css('display','block')
   })
@@ -48,4 +49,11 @@ $('.login').on('click',function(){
     $('.mask').css('display','none')
     $('.wrap').css('display','none')
   })
+
+  //进入购物车
+  $('.enterCar').on('click',function(){
+    window.open('../dist/car.html');
+    alert('woyaptiaol ')
+  })
+
   

@@ -60,7 +60,7 @@ $(window).scroll(function(){
         $(window).scrollTop()>0?$('.mask').css('position','fixed'):$('.mask').css('position','absolute')
           //滚动距离
 
-        console.log($(window).scrollTop())
+        // console.log($(window).scrollTop())
 });
 
 //遮罩层和控制页面出现
@@ -81,9 +81,23 @@ $('.sw-pic img').on('click',function(){
 })
 
 //点击一类商品跳转到商品列表
-$('.tab-nav').on('click',function(){
+$('.tab-nav dd').on('click',function(){
   window.open('../dist/goodslist.html')
 })
 
 //数据请求
+
+$(function(){
+  //获取商品列表数据
+  $.ajax({
+    url:'../goods.json',
+    type:'get',
+    dataType:'json',
+    success:function(json){
+      console.log(json)
+    }
+  })
+
+})
+
 
