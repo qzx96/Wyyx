@@ -1,7 +1,7 @@
 [
-    { "title": "2020新果上市，南非碧根果仁 150g", "imgurl1": "img/new1.png","imgurl2": "img/new2.png",  "price": "￥39.9", "code": "abc1" },
-    { "title": "心心相印手帕纸，薰衣草味 你值得拥有", "imgurl1": "img/new1.jpg","imgurl2": "img/new2.jpg",  "price": "￥9.9", "code": "abc2" },
-    { "title": "奶香浓郁四层夹心俄罗斯冰淇淋威化饼干", "imgurl1": "img/new5.jpg","imgurl2": "img/gtr1.png",  "price": "￥69", "code": "abc3" },
-    { "title": "2020新果上市，临安山核桃仁 150g", "imgurl1": "img/nepr1.png","imgurl2": "img/goodslist.png",  "price": "￥56.8", "code": "abc4" }
+    {"describe":"老矿和田美玉/安心宝宝锁/玉锁平安", "title": "东方轻奢•羊脂和田玉 宝宝锁吊坠 红绳手链", "imgurl1": "../img/new1.png","imgurl2": "../img/new2.png",  "price": "￥39.9", "code": "abc1" },
+    {"describe":"减龄大翻领，透出复古俏皮", "title": "松软复古，女式短款牛角扣仿皮草外套", "imgurl1": "../img/new1.jpg","imgurl2": "../img/new2.jpg", "imgurl3": "../img/new3.jpg","imgurl4": "../img/new4.jpg","imgurl5": "../img/newy5.png","price": "￥255", "code": "abc2" },
+    {"describe":"临安名产，当季新货", "title": "2020新果上市，临安山核桃仁 150g", "imgurl1": "../img/new5.jpg","imgurl2": "../img/gtr1.png",  "price": "￥69", "code": "abc3" },
+    {"describe":"五层酥脆威化，四层奶油夹心", "title": "奶香浓郁四层夹心俄罗斯冰淇淋威化饼干 ", "imgurl1": "../img/nepr1.png","imgurl2": "../img/goodslist.png", "imgurl3": "../img/wafer.png","imgurl4": "../img/wafer1.png","imgurl5": "../img/wafer2.png",  "price": "￥56.8", "code": "abc4" }
 
 ]

@@ -79,6 +79,7 @@
                 border: 1px solid #e8e8e8;
                 overflow: hidden;
                 display: none;
+                background: #fff;
                 z-index: 999;
                 img{
                     position: absolute;
@@ -200,6 +201,128 @@
                             
                         }
                     }
+                }
+            }
+            .rule{
+                width: 610px;
+                height: 45px;
+                margin: 20px 0 0 10px ;
+
+                p{
+                    
+                    width: 46px;
+                    height: 46px;
+                    line-height: 46px;
+                    float: left;
+                   
+                }
+                .table{
+                     float: left;
+                    width: 550px;
+                    height: 45px;
+                    li{
+                        display: inline-block;
+                        a{
+                            width: 45px;
+                            height: 45px;
+                            border: #ddd;
+                            img{
+                                width: 45px;
+                                height: 45px;
+                            }
+                        }
+                    }
+                }
+                
+
+            }
+            .donum{
+                margin: 20px 0 0 10px;
+                height: 50px;
+                p{
+                    color: #333333;
+                    width: 48px;
+                    height: 48px;
+                    line-height: 48px;
+                    margin-right: 10px;
+                    float: left;
+
+                }
+                .num {
+                    float: left;
+                    margin-top: 10px;
+                    box-sizing: border-box;
+                    width: 117px;
+                    height: 28px;
+                    border: 1px solid #ddd;
+
+                    span {
+                        box-sizing: border-box;
+                        display: inline-block;
+                        width: 24px;
+                        height: 26px;
+                        cursor: pointer;
+                        text-align: center;
+                        line-height: 24px;
+                    }
+
+                    .less {
+                        border-right: 1px solid #ddd;
+                    }
+
+                    .add {
+                        border-left: 1px solid #ddd;
+                    }
+
+                    input {
+                        text-align: center;
+                        box-sizing: border-box;
+                        width: 58px;
+                        height: 24px;
+                        // margin-top: -6px;
+                        border: none;
+                    }
+
+                }
+            }
+            .buy{
+                a{
+                    display: inline-block;
+                    width: 168px;
+                    height: 50px;
+                    margin-right: 10px;
+                    line-height: 50px;
+                    text-align: center;
+                     font-size: 18px;
+                }
+                .nowbuy{
+                   
+                    
+                    color: #b4a078;
+                    border: 1px solid #b4a078;
+                    background-color: #f5f3ef;
+                }
+
+                .nowbuy:hover{
+                    color: #c0ae8a;
+                     border: 1px solid #c0ae8a;
+                     background-color: #fff;
+                }
+                .addtocar{
+                    color: #fff;
+                    border: 1px solid #b4a078;
+                    background-color: #b4a078;
+                    i{
+                        display: inline-block;
+                        background:url('../img/car.png') ;
+                        background-position: 0 -68px;
+                        height: 21px;
+                        width: 21px;
+                       
+                    }
+                }
+                .addtocar:hover{
+                    opacity: 0.8;
                 }
             }
 

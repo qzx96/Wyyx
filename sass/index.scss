@@ -710,6 +710,7 @@ html {
             .sw-wrap {
                 .sw-slide {
                     .sw-pic {
+                        position: relative;
                         width: 265px;
                         height: 364px;
                         margin: 0 3px;
@@ -717,15 +718,22 @@ html {
                         background-color: #fff;
 
                         img {
+                            position: absolute;;
+                            top: 0;
+                            left: 0;
                             width: 265px;
                             height: 265px;
                             background-color: #F4F4F4;
                             cursor: pointer;
                         }
+                        .img2{
+                            opacity: 0;
+                        }
+                       
 
                         .bd {
                             text-align: center;
-
+                            margin-top: 275px;
                             .tag {
                                 margin: 5px 35px 2px;
 
