@@ -19,9 +19,10 @@
 
             .check {
                 margin-left: 20px;
-
+                text-align: center;
                 input {
                     margin-top: -2px;
+                    text-align: center;
                 }
 
                 span {
@@ -118,7 +119,7 @@
         height: 696px;
         padding-bottom: 40px;
         margin-top: 10px;
-
+        display:none;
         .empty-status {
             width: 1088px;
             height: 264px;
@@ -184,15 +185,17 @@
         .data {
             @include car;
         }
-
+        .hint,.data{
+                display: none;
+            }
         .sp_wrap {
-
+            
             .car-group {
                 border: 1px solid #ddd;
                 margin-bottom: 10px;
                 // min-height: 142px;
                 @include car;
-
+               
                 .d-car {
                     width: 1088px;
                     background: #fff;
@@ -337,6 +340,7 @@
                         background: #fff;
                         text-align: center;
                         display: inline-block;
+                        cursor: pointer;
                     }
                     .cont{
                         font-size: 14px;
@@ -348,8 +352,7 @@
             .totl {
                
                 @include car;
-                
-
+            
                 .d-totl {
                     font-size: 14px;
                     position: relative;
@@ -385,7 +388,7 @@
                           .span1{
                               font-size: 14px;
                               color: #333;
-                              margin: 0 14px 0 0;
+                              margin: 0 10px 0 0;
                           }
                           .span2,i{
                               font-size: 22px;

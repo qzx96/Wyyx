@@ -81,7 +81,7 @@ $(function () {
     success: function (json) {
       //console.log(json)
       var liststr = '';
-      // var titstr = '';
+      var imgstr = '';
       $.each(goodsArr, function (Index, val) {
         $.each(json, function (index, item) {
           if (val.code === item.code) {
@@ -101,12 +101,12 @@ $(function () {
 
               }
             }
-
+           
             console.log(urlArr.length)
             for (var i = 0, len = urlArr.length; i < len; i++) {
-              liststr += `<li><a href="javascript:;"><img src="${urlArr[i]}" alt="" srcset=""></a></li>`
+              liststr += `<li class ="u-list"><a href="javascript:;"><img src="${urlArr[i]}" alt="" srcset=""></a></li>`
               // console.log( `${urlArr[i]}`)
-
+              imgstr +=  `<li class = "u-table"><a href="javascript:;"><img src="${urlArr[i]}" alt="" srcset=""><i class="choice"></i></a></li>`
             }
           }
 
@@ -117,18 +117,31 @@ $(function () {
       })
       //添加li节点
       $('.ul-list').html(liststr)
+      $('.table').html(imgstr)
       //去掉第一个li的左边距
       $('.ul-list li:first').css('margin-left', '0')
 
+
+      //点击规则里的图片加上效果
+      $('.table li').on('click',function(){
+          console.log(this)
+          $(this).find('a').css('border','2px solid #B4A078')
+          $(this).siblings().find('a').css('border',' #ddd 2px solid')
+          $(this).find('a i').css('display','block')
+          $(this).siblings().find('a i').css('display','none')
+          
+      })
 
       //滑过li切换图片
 
       // //获取当前展示盒子里的图片路径并保存
       // var isrc = $('.goodsbox img').attr('src');
       $('.ul-list li').on({
-
+       
         mouseenter: function () {
+          // console.log($(this).siblings().find('a'))
           $(this).find('a').css('border-color', '#B4A078')
+         $(this).siblings().find('a').css('border-color', '#e8e8e8')
           //滑过的li的图片路径赋给展示盒子和大盒子
           $('.goodsbox img').attr('src', $(this).find('img').attr('src'))
           $('.hidbox img').attr('src', $(this).find('img').attr('src'))
@@ -178,12 +191,13 @@ $(function () {
 
     //如果购物车没有当前选中的商品，添加一条数据
     if(!hasCargoods){
-      cargoodsArr.push({cocde:code,num:1})
+      cargoodsArr.push({code:code,num:1})
     }
     //更新本地数据库
     localStorage.setItem('cargoods',JSON.stringify(cargoodsArr))
 
     alert('添加购物车成功')
+    window.open('../pages/car.html');
   })
 
 })
