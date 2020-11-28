@@ -4,6 +4,7 @@
         display: inline-block;
     }
 
+    
     .d-txt {
         box-sizing: border-box;
         width: 1090px;
@@ -295,8 +296,10 @@
                     .d5 {
                         color: #666;
                         line-height: 24px;
-
-                        a:hover {
+                        em{
+                            cursor: pointer;
+                        }
+                        em:hover,a:hover {
                             color: #B4A078;
                         }
                     }
@@ -353,7 +356,7 @@
             .totl {
                
                 @include car;
-            
+                display: none;
                 .d-totl {
                     font-size: 14px;
                     position: relative;
