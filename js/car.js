@@ -17,7 +17,9 @@ $(function () {
                         console.log(item.code)
                         console.log(val.code)
                         if (item.code === val.code) {
+                           
                             var price = item.price.substring(1, item.price.length);
+                             
                                     domstr += `
                                     <div class="car-group">
                                         <div class="d d-txt d-car">
@@ -66,7 +68,7 @@ $(function () {
                 $('#goodscar').html(domstr);
                 $('.totl').css('display','block')
                 $('#hint').css('display','block')
-                 $('.data').css('display','block')
+                $('.data').css('display','block')
                 
 
             }
@@ -79,7 +81,7 @@ $(function () {
 
 
     }else{
-        $('.car-empty').css('display',block)
+        $('.car-empty').css('display',"block")
     }
 
 })
